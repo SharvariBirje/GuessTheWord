@@ -14,7 +14,7 @@ while(ch):
         word=randomword["word"].lower()
         while len(word) != 5:
             api_url = 'https://api.api-ninjas.com/v1/randomword?length=5'
-            response = requests.get(api_url, headers={'X-Api-Key': 'zhqeIN9QuS4XLbiP6IVzUw==j7oPe1CwcleTIhWJ'})
+            response = requests.get(api_url, headers={'X-Api-Key': 'Your API Key'})
             if response.status_code == requests.codes.ok:
                 randomword=response.json()
                 word=randomword["word"].lower()
